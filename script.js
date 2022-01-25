@@ -3,18 +3,14 @@ $(function(){
     infinite: true,
     dots: true,
     arrows: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-      settings: {
-        slidesToShow: 2
-      }
-      }
-    ]   
+     
   })
   $('.header-burger').click(function(event) {
     $('.header-burger, .header-menu').toggleClass('active');
    });
+   $('.language-button').click(function(event) {
+    $('.language-button, .language-list').toggleClass('active');
+   }); 
 });
